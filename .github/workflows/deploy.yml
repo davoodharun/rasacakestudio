@@ -1,6 +1,5 @@
-# CI/CD: Deploy static site on push to main
-# Use with GitHub Pages (enable in repo Settings → Pages → Source: GitHub Actions)
-# Or add a step to deploy to Netlify/Vercel via their CLI or API
+# CI/CD: Deploy static site to GitHub Pages on push to main
+# Repo Settings → Pages → Build and deployment → Source: GitHub Actions
 
 name: Deploy
 
@@ -12,15 +11,24 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # required for pushing to gh-pages branch
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          # Optional: use a custom domain
-          # cname: yourdomain.com
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
