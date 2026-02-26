@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rasa Cake Studio — Homemade Cakes by a Sri Lankan American Baker</title>
+  <meta name="description" content="Rasa Cake Studio: homemade cakes made with love by a Sri Lankan American immigrant. Custom cakes, celebrations, and sweet moments." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Rasa Cake Studio home">
+        <img src="logo.svg" alt="Rasa Cake Studio" width="180" height="48" />
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <p class="hero-tagline">Homemade with love</p>
+        <h1>Every slice tells a story</h1>
+        <p class="hero-desc">From Sri Lanka to your table — custom cakes for celebrations, quiet moments, and everything in between.</p>
+        <a href="#contact" class="btn btn-primary">Order a cake</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about-inner">
+        <div class="about-text">
+          <h2>Meet Rasa Cake Studio</h2>
+          <p>I’m a Sri Lankan American baker who grew up around the smell of cardamom, coconut, and jaggery. When I moved to the States, I brought those flavors with me and started turning them into cakes that feel like home.</p>
+          <p>Every cake here is made by hand in small batches — no shortcuts, no mass production. Whether you want something classic, something with a Sri Lankan twist, or a design that’s entirely yours, we’ll make it happen.</p>
+          <p class="about-cta">Ready to celebrate? <a href="#contact">Get in touch</a> and tell me about your occasion.</p>
+        </div>
+        <div class="about-accent">
+          <span class="accent-line"></span>
+          <p>Custom orders · Birthdays · Weddings · Any excuse for cake</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <p class="gallery-intro">A peek at some of the cakes we’ve made. Follow us on <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a> for the latest.</p>
+        <div class="gallery-grid" role="list">
+          <div class="gallery-item" role="listitem">
+            <a href="img/1.jpeg" class="gallery-link" data-caption="Chocolate cake with fresh flowers" aria-label="View cake photo">
+              <img src="img/1.jpeg" alt="Chocolate cake with yellow flower and berries" loading="lazy" />
+            </a>
+          </div>
+          <div class="gallery-item" role="listitem">
+            <a href="img/2.jpeg" class="gallery-link" data-caption="Custom celebration cake" aria-label="View cake photo">
+              <img src="img/2.jpeg" alt="Decorative cake" loading="lazy" />
+            </a>
+          </div>
+          <div class="gallery-item" role="listitem">
+            <a href="img/3.jpeg" class="gallery-link" data-caption="Elegant tiered cake" aria-label="View cake photo">
+              <img src="img/3.jpeg" alt="Tiered cake" loading="lazy" />
+            </a>
+          </div>
+          <div class="gallery-item" role="listitem">
+            <a href="img/4.jpeg" class="gallery-link" data-caption="Seasonal special" aria-label="View cake photo">
+              <img src="img/4.jpeg" alt="Cake slice and decoration" loading="lazy" />
+            </a>
+          </div>
+          <div class="gallery-item" role="listitem">
+            <a href="img/6.jpeg" class="gallery-link" data-caption="Birthday creation" aria-label="View cake photo">
+              <img src="img/6.jpeg" alt="Birthday cake" loading="lazy" />
+            </a>
+          </div>
+          <div class="gallery-item" role="listitem">
+            <a href="img/7.jpeg" class="gallery-link" data-caption="Wedding or party cake" aria-label="View cake photo">
+              <img src="img/7.jpeg" alt="Elegant cake" loading="lazy" />
+            </a>
+          </div>
+          <div class="gallery-item" role="listitem">
+            <a href="img/8.jpeg" class="gallery-link" data-caption="Custom design" aria-label="View cake photo">
+              <img src="img/8.jpeg" alt="Custom cake" loading="lazy" />
+            </a>
+          </div>
+          <div class="gallery-item" role="listitem">
+            <a href="img/9.jpeg" class="gallery-link" data-caption="Sweet finish" aria-label="View cake photo">
+              <img src="img/9.jpeg" alt="Cake detail" loading="lazy" />
+            </a>
+          </div>
+          <div class="gallery-item" role="listitem">
+            <a href="img/WhatsApp%20Image%202026-02-25%20at%2011.09.37%20PM.jpeg" class="gallery-link" data-caption="Fresh from the kitchen" aria-label="View cake photo">
+              <img src="img/WhatsApp%20Image%202026-02-25%20at%2011.09.37%20PM.jpeg" alt="Cake from the studio" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Get in touch</h2>
+        <p class="contact-intro">Tell us about your event, flavors you love, or just say hi. We’ll get back to you soon.</p>
+        <form class="contact-form" id="contact-form" action="#" method="post" name="contact" data-netlify="true" netlify-honeypot="bot">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden" aria-hidden="true"><label>Don’t fill this out: <input name="bot" /></label></p>
+          <div class="form-row">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" />
+          </div>
+          <div class="form-row">
+            <label for="occasion">Occasion</label>
+            <select id="occasion" name="occasion">
+              <option value="">Select an option</option>
+              <option value="birthday">Birthday</option>
+              <option value="wedding">Wedding</option>
+              <option value="anniversary">Anniversary</option>
+              <option value="corporate">Corporate / event</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="date">Preferred date (if known)</label>
+            <input type="date" id="date" name="date" />
+          </div>
+          <div class="form-row">
+            <label for="message">Your request *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us about the cake you have in mind, flavors, size, and any dietary needs…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+        <div class="form-success hidden" id="form-success" role="status">
+          Thanks! We’ve received your message and will get back to you soon.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">Rasa Cake Studio</p>
+      <p class="footer-tagline">Homemade cakes · Sri Lankan American baking</p>
+      <p class="footer-copy">&copy; <span id="year"></span> Rasa Cake Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightbox-img" />
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
